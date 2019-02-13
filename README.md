@@ -1,0 +1,2 @@
+# MobileAutomationCourse
+For test tasks
