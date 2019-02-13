@@ -21,4 +21,14 @@ public class MainClassTest {
                 "getClassNumber returned value that is smaller than 45!" +
                         "\nThe value is " + mainClass.getClassNumber());
     }
+
+    // Test 3
+    @Test
+    public void testGetClassString() {
+        String stringToCheck = mainClass.getClassString();
+
+        Assertions.assertTrue(stringToCheck.contains("Hello") || stringToCheck.contains("hello"),
+                "getClassString returned string that doesn't contain 'Hello' or 'hello'!" +
+                        "\nCurrent string: \"" + stringToCheck + "\"");
+    }
 }
